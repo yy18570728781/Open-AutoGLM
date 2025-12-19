@@ -11,7 +11,12 @@ Environment Variables:
     PHONE_AGENT_API_KEY: API key for model authentication (default: EMPTY)
     PHONE_AGENT_MAX_STEPS: Maximum steps per task (default: 100)
     PHONE_AGENT_DEVICE_ID: ADB device ID for multi-device setups
+
+You can also create a .env file in the project root to set these variables.
 """
+
+from dotenv import load_dotenv
+load_dotenv()  # 从 .env 文件加载环境变量
 
 import argparse
 import os
